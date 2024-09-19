@@ -2,31 +2,31 @@ package Prova;
 
 public class Questao4 {
 
-		 public static void main(String[] args) {
-		
-			        int integrantes = 10;
-			        transforma(integrantes);  
-			        
-			        Banda b = new Banda();
-			        b.cadastra("A", "B", integrantes);
-			        System.out.println(b.exibir()); // 4a
+    public static void main(String[] args) {
 
-			        b.setNrIntegrantes(transformaX(integrantes));
-			        System.out.println(b.exibir()); // 4b
+        int integrantes = 8;
+        transforma(integrantes);  
 
-			        transforma(b);
-			        System.out.println(b.exibir()); // 4c
-			    }
+        Banda b = new Banda();
+        b.cadastra("SambaST", "Samba", integrantes);
+        System.out.println(b.exibir()); // 4a
 
-			    public static void transforma(Banda x) {
-			        x.setNome("X");
-			    }
+        b.setNrIntegrantes(transformaX(integrantes));
+        System.out.println(b.exibir()); // 4b
 
-			    public static void transforma(int x) {
-			        x = x + 2;  
-			    }
+        transforma(b);
+        System.out.println(b.exibir()); // 4c
+    }
 
-			    public static int transformaX(int x) {
-			        return x + 2;
-			    }
-			}
+    public static void transforma(Banda x) {
+        x.setNome("Forrozeiros");
+    }
+
+    public static void transforma(int x) {
+        x = x + 3;  
+    }
+
+    public static int transformaX(int x) {
+        return x + 3;
+    }
+}
